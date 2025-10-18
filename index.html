@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TOUCH ME | FUNNY WEB PAGE</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <center><button onclick="change()" id="btn">TOUCH ME !!</button>
+     <p id="text"></p></center>
+
+
+<script>
+     let name = "LOVE YOU !!";
+     let index = 0;
+
+    function change(){
+    let x = document.getElementById("text");
+    let interval = setInterval(()=>{
+        if(index < name.length){
+            x.innerHTML += name.charAt(index);
+            index++;
+        }
+        else {
+            clearInterval(interval);
+            alert("Full Name Displayed !!");
+        }
+    }, 250);
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
