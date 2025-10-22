@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>TOUCH ME | FUNNY WEB PAGE</title>
      <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="images/lovelogo.png" type="image/x-icon">
 </head>
 <body>
      <center><button onclick="change()" id="btn">TOUCH ME !!</button>
@@ -12,19 +13,19 @@
 
 
 <script>
-     let name = "LOVE YOU !!";
+     let luv = "I LOVE YOU "
      let index = 0;
-
     function change(){
+    let name = prompt("Enter Your Name ?");
     let x = document.getElementById("text");
     let interval = setInterval(()=>{
         if(index < name.length){
-            x.innerHTML += name.charAt(index);
+            x.innerHTML += name.charAt(index).toUpperCase();
             index++;
         }
         else {
             clearInterval(interval);
-            alert("Full Name Displayed !!");
+            alert("I LOVE YOU "+name.toUpperCase()+" !!");
         }
     }, 250);
 }
