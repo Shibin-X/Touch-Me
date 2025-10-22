@@ -20,6 +20,7 @@
           }
           body{
                animation: anime 10s infinite ease-in-out;
+               
                background-size: cover;
                background-position: center;
           }
